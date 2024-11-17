@@ -1,5 +1,5 @@
 export const navContent = {
-  brand: 'PixelPerfect',
+  brand: 'Sunetya',
   links: {
     services: 'Servicios',
     work: 'Proyectos',
@@ -119,12 +119,12 @@ export const footerContent = {
   },
   contact: {
     title: 'Contáctanos',
-    email: 'hola@pixelperfect.com',
+    email: 'hola@sunetya.com',
     phone: '+1 (555) 123-4567',
     address: 'Calle Diseño 123, Ciudad Creativa, 12345'
   },
   legal: {
-    copyright: '© 2024 PixelPerfect. Todos los derechos reservados.',
+    copyright: '© 2024 Sunetya. Todos los derechos reservados.',
     links: [
       { text: 'Política de Privacidad', href: '#privacy' },
       { text: 'Términos de Servicio', href: '#terms' },
