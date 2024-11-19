@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Monitor, Smartphone, Code } from "lucide-react";
-import { heroContent } from "../content/siteContent";
+import { heroContent, LinkWhatsapp } from "../content/siteContent";
 
 export default function Hero() {
   return (
@@ -23,13 +23,13 @@ export default function Hero() {
             </h1>
             <p className="mt-6 text-xl text-gray-600">{heroContent.subtitle}</p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <button className="bg-purple-600 text-white px-8 py-3 rounded-full hover:bg-purple-700 transition-colors flex items-center gap-2">
+              <a href={LinkWhatsapp.href} target="_blank" className="bg-purple-600 text-white px-8 py-3 rounded-full hover:bg-purple-700 transition-colors flex items-center gap-2">
                 {heroContent.buttons.primary}
                 <ArrowRight size={20} />
-              </button>
-              <button className="border-2 border-purple-600 text-purple-600 px-8 py-3 rounded-full hover:bg-purple-50 transition-colors">
+              </a>
+              <a href="#work" className="border-2 border-purple-600 text-purple-600 px-8 py-3 rounded-full hover:bg-purple-50 transition-colors">
                 {heroContent.buttons.secondary}
-              </button>
+              </a>
             </div>
           </motion.div>
 

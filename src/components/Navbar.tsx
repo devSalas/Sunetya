@@ -1,6 +1,6 @@
 import React from 'react';
 import { Menu, X } from 'lucide-react';
-import { navContent } from '../content/siteContent';
+import { LinkWhatsapp, navContent } from '../content/siteContent';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -21,9 +21,9 @@ export default function Navbar() {
               <NavLink href="#work">{navContent.links.work}</NavLink>
               <NavLink href="#process">{navContent.links.process}</NavLink>
               <NavLink href="#contact">{navContent.links.contact}</NavLink>
-              <button className="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 transition-colors">
+              <a href={LinkWhatsapp.href} target='_blank'  className="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 transition-colors">
                 {navContent.cta}
-              </button>
+              </a>
             </div>
           </div>
           
@@ -46,9 +46,9 @@ export default function Navbar() {
             <MobileNavLink href="#work">{navContent.links.work}</MobileNavLink>
             <MobileNavLink href="#process">{navContent.links.process}</MobileNavLink>
             <MobileNavLink href="#contact">{navContent.links.contact}</MobileNavLink>
-            <button className="w-full bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 transition-colors">
+            <a href={LinkWhatsapp.href} target='_blank' className="w-full bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 transition-colors">
               {navContent.cta}
-            </button>
+            </a>
           </div>
         </div>
       )}

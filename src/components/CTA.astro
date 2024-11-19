@@ -1,6 +1,6 @@
 ---
 import { ArrowRight } from 'lucide-react';
-import { ctaSectionContent } from '../content/siteContent';
+import { ctaSectionContent, LinkWhatsapp } from '../content/siteContent';
 ---
 
 <section class="py-20 bg-purple-600">
@@ -11,9 +11,9 @@ import { ctaSectionContent } from '../content/siteContent';
     <p class="text-xl text-purple-100 mb-12 max-w-2xl mx-auto">
       {ctaSectionContent.subtitle}
     </p>
-    <button class="bg-white text-purple-600 px-8 py-3 rounded-full hover:bg-purple-50 transition-colors inline-flex items-center gap-2">
+    <a href={LinkWhatsapp.href} target="_blank" class="bg-white text-purple-600 px-8 py-3 rounded-full hover:bg-purple-50 transition-colors inline-flex items-center gap-2">
       {ctaSectionContent.button}
       <ArrowRight size={20} />
-    </button>
+    </a>
   </div>
 </section>

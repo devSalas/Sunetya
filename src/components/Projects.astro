@@ -1,0 +1,56 @@
+---
+const proyectos = [
+  {
+    titulo: "Diseño Personalizado para Dentlife, Clínica Dental",
+    descripcion:
+      "Se desarrolló un diseño web a medida para una clínica dental de vanguardia, centrado en mejorar la presencia en línea y facilitar el acceso a la información para los pacientes.",
+    imagen: "/video/dentlife/overview.mp4",
+  },
+  {
+    titulo: "Diseño Personalizado para Gigamas, Empresa de Telecomunicaciones",
+    descripcion:
+      "Se desarrolló un diseño web a medida para una empresa líder en servicios de Internet, enfocándonos en resaltar su identidad y mejorar la experiencia del usuario.",
+    imagen: "/video/gigamas/overview.mp4",
+  },
+];
+---
+
+<section id="work" class="py-12 bg-gray-50 ">
+  <div class="container mx-auto px-4">
+    <div class="text-center">
+      <h2 class="text-4xl font-bold mb-4 my-[48px]">Nuestros Proyectos</h2>
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+        Explorá nuestra colección de trabajos recientes. Cada proyecto refleja
+        nuestro compromiso con el diseño innovador y la funcionalidad de
+        vanguardia.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2  gap-8 mt-[48px]">
+      {
+        proyectos.map((proyecto, index) => (
+          <div class="overflow-hidden rounded-b-2xl bg-white">
+            <video
+              src={proyecto.imagen}
+              autoplay
+              loop
+              width={400}
+              height={400}
+              class="w-full   object-cover"
+            />
+            <div class="p-4 sm:pb-16">
+              <h3 class="font-semibold text-lg mb-2">{proyecto.titulo}</h3>
+              <p class="text-gray-600">{proyecto.descripcion}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+   <!--  <div class="text-center mt-12">
+      <button
+        class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300"
+      >
+        Ver Más Proyectos
+      </button>
+    </div> -->
+  </div>
+</section>
