@@ -15,12 +15,12 @@ export default function Footer() {
             <p className="text-gray-400 mb-4">
               {footerContent.brand.description}
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               <SocialLink href="#" icon={<Facebook size={20} />} />
               <SocialLink href="#" icon={<Twitter size={20} />} />
               <SocialLink href="#" icon={<Instagram size={20} />} />
               <SocialLink href="#" icon={<Linkedin size={20} />} />
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Links */}

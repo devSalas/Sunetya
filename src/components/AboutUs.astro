@@ -1,0 +1,139 @@
+---
+interface Achievement {
+  number: string;
+  label: string;
+}
+
+const achievements: Achievement[] = [
+  { number: "150+", label: "Proyectos Completados" },
+  { number: "98%", label: "Clientes Satisfechos" },
+  { number: "10+", label: "Años de Experiencia" },
+  { number: "25+", label: "Premios Ganados" }
+];
+
+const technologies = [
+  "React", "Vue", "Angular", "Node.js", 
+  "Python", "AWS", "Docker", "TypeScript"
+];
+---
+
+<section id="nosotros" class="py-24 bg-gradient-to-b from-slate-50 to-white">
+  <div class="container mx-auto px-4">
+    <div class="max-w-3xl mx-auto text-center mb-16" data-aos="fade-up">
+      <h2 class="text-4xl font-bold text-slate-800 mb-4">
+        Acerca De Nosotros
+      </h2>
+      <div class="w-20 h-1 bg-indigo-600 mx-auto mb-6"></div>
+      <p class="text-lg text-slate-600">
+        Somos un equipo apasionado de desarrolladores, diseñadores y estrategas digitales
+        comprometidos con la excelencia y la innovación en cada proyecto.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+      <div class="space-y-6" data-aos="fade-right">
+        <h3 class="text-2xl font-bold text-slate-800">
+          Impulsando el Éxito Digital desde 2014
+        </h3>
+        <p class="text-slate-600">
+          Con una década de experiencia en el desarrollo web, hemos ayudado a empresas
+          de todos los tamaños a establecer su presencia digital y alcanzar sus objetivos
+          de negocio a través de soluciones tecnológicas innovadoras.
+        </p>
+      
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <svg class="w-5 h-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+            </svg>
+            <span class="text-slate-700">Desarrollo Web Personalizado</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <svg class="w-5 h-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+            </svg>
+            <span class="text-slate-700">Diseño UI/UX Centrado en el Usuario</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <svg class="w-5 h-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+            </svg>
+            <span class="text-slate-700">Consultoría Tecnológica Estratégica</span>
+          </div>
+        </div>
+        <div class="flex gap-[20px] justify-start items-center">
+            <div class="flex flex-col gap-[10px]">
+                <div class="w-[80px] h-[80px] rounded-full bg-blue-500">
+                </div>
+                <p>Gerson Junior</p>
+            </div>
+            <div class="flex flex-col gap-[10px]">
+                <div class="w-[80px] h-[80px] rounded-full bg-blue-500">
+                </div>
+                <p>Gerson Junior</p>
+            </div>
+            <div class="flex flex-col gap-[10px]">
+                <div class="w-[80px] h-[80px] rounded-full bg-blue-500">
+                </div>
+                <p>Gerson Junior</p>
+            </div>
+            
+        </div>
+      </div>
+      <div class="relative" data-aos="fade-left">
+        <img 
+          src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=2070"
+          alt="Equipo de desarrollo"
+          class="rounded-lg shadow-xl"
+        />
+        <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-lg">
+          <p class="text-4xl font-bold text-indigo-600">1+</p>
+          <p class="text-slate-600">Años de Innovación</p>
+        </div>
+      </div>
+    </div>
+   
+
+<!--     <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
+      {achievements.map((achievement) => (
+        <div class="text-center" data-aos="fade-up">
+          <p class="text-4xl font-bold text-indigo-600 mb-2">{achievement.number}</p>
+          <p class="text-slate-600">{achievement.label}</p>
+        </div>
+      ))}
+    </div> -->
+
+  <!--   <div class="bg-slate-50 rounded-2xl p-8 md:p-12">
+      <h3 class="text-2xl font-bold text-slate-800 text-center mb-8" data-aos="fade-up">
+        Tecnologías que Dominamos
+      </h3>
+      <div class="flex flex-wrap justify-center gap-4">
+        {technologies.map((tech) => (
+          <span class="px-4 py-2 bg-white rounded-full text-slate-700 shadow-sm" data-aos="fade-up">
+            {tech}
+          </span>
+        ))}
+      </div>
+    </div> -->
+  </div>
+</section>
+
+<!-- <script>
+  import AOS from 'aos';
+  import 'aos/dist/aos.css';
+  
+  AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 100
+  });
+</script>
+
+<style>
+  [data-aos] {
+    pointer-events: none;
+  }
+  [data-aos].aos-animate {
+    pointer-events: auto;
+  }
+</style> -->
