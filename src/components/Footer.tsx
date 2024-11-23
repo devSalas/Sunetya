@@ -38,7 +38,7 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">{footerContent.services.title}</h4>
             <ul className="space-y-2">
               {footerContent.services.links.map((link, index) => (
-                <FooterLink key={index} href={link.href}>{link.text}</FooterLink>
+                <li key={index}>{link.text}</li>
               ))}
             </ul>
           </div>
@@ -59,20 +59,24 @@ export default function Footer() {
                 <MapPin size={20} className="text-purple-400" />
                 <span>{footerContent.contact.address}</span>
               </li>
+              <li className="flex items-center space-x-3">
+                <span className='text-purple-400'>RUC:</span>
+                <span>{footerContent.contact.RUC}</span>
+              </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col md:flex-row justify-center items-center">
             <p className="text-sm text-gray-400">
               {footerContent.legal.copyright}
             </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
+            {/* <div className="flex space-x-6 mt-4 md:mt-0">
               {footerContent.legal.links.map((link, index) => (
                 <FooterLink key={index} href={link.href}>{link.text}</FooterLink>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

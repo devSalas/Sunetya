@@ -121,7 +121,6 @@ export const footerContent = {
       { text: "Diseño Web", href: "#web-design" },
       { text: "Desarrollo", href: "#development" },
       { text: "Diseño UI/UX", href: "#ui-ux" },
-      { text: "Apps Móviles", href: "#mobile" },
       { text: "Consultoría", href: "#consulting" },
     ],
   },
@@ -129,7 +128,8 @@ export const footerContent = {
     title: "Contáctanos",
     email: "hola@sunetya.com",
     phone: "+51 927 859 435",
-    address: "San Luis",
+    address: "Lima, San Luis",
+    RUC: "10747028261",
   },
   legal: {
     copyright: "© 2024 Sunetya. Todos los derechos reservados.",
@@ -145,5 +145,5 @@ export const footerContent = {
 
 export const LinkWhatsapp = {
   title: "+51 927 859 435",
-  href: "https://wa.me/+51927859435?text=Hola%20Sunetya,%20me%20interesan%20tus%20servicios%20de%20Desarrollo%20Web.",
+  href: "https://wa.me/+51927859435?text=Hola%20Esteban%20Salas,%20me%20interesan%20tus%20servicios%20de%20Desarrollo%20Web.",
 }
